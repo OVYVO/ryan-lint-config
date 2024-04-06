@@ -1,0 +1,24 @@
+{
+  "name": "@yan/lint-config",
+  "version": "1.0.0",
+  "description": "A shared configuration package for ESLint, Prettier, and Stylelint",
+  "keywords": [
+    "eslint",
+    "prettier",
+    "stylelint"
+  ],
+  "author": "vue12306@163.com",
+  "peerDependencies": {
+    "eslint": "^x.y.z",
+    "prettier": "^a.b.c",
+    "stylelint": "^d.e.f"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OVYVO/yan-lint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/OVYVO/yan-lint-config/issues"
+  },
+  "license": "MIT"
+}
