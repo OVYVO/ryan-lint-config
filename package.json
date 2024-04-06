@@ -8,17 +8,8 @@
     "stylelint"
   ],
   "author": "vue12306@163.com",
-  "peerDependencies": {
-    "eslint": "^x.y.z",
-    "prettier": "^a.b.c",
-    "stylelint": "^d.e.f"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/OVYVO/yan-lint-config"
-  },
-  "bugs": {
-    "url": "https://github.com/OVYVO/yan-lint-config/issues"
-  },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "@yan/eslint-config": "workspace:^"
+  }
 }

@@ -1,0 +1,23 @@
+{
+  "name": "@yan/eslint-config",
+  "version": "1.0.0",
+  "description": "A shared configuration package for ESLint",
+  "main": "index.js",
+  "keywords": [
+    "eslint",
+    "eslint-config"
+  ],
+  "author": "vue12306@163.com",
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OVYVO/yan-lint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/OVYVO/yan-lint-config/issues"
+  },
+  "license": "MIT"
+}

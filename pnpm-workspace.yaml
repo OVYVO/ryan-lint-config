@@ -1,0 +1,3 @@
+packages:
+  - play # 调试库
+  - eslint # 文档库
