@@ -1,4 +1,4 @@
 packages:
-  - eslint/*
-  - prettier/*
-  - stylelint/*
+  - eslint
+  - prettier
+  - stylelint
