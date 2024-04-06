@@ -1,12 +1,5 @@
 {
-  "name": "@ovyvo/lint-config",
-  "version": "1.0.0",
-  "description": "A shared configuration package for ESLint, Prettier, and Stylelint",
-  "keywords": [
-    "eslint",
-    "prettier",
-    "stylelint"
-  ],
-  "author": "vue12306@163.com",
-  "license": "MIT"
+  "workspaces": [
+    "packages/**"
+  ]
 }
