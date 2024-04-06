@@ -1,5 +1,5 @@
 {
-  "name": "@yan/stylelint-config",
+  "name": "@ovyvo/stylelint-config",
   "version": "1.0.0",
   "description": "A shared configuration package for StyleLint",
   "main": "index.js",

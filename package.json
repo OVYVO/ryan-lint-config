@@ -1,5 +1,5 @@
 {
-  "name": "@yan/lint-config",
+  "name": "@ovyvo/lint-config",
   "version": "1.0.0",
   "description": "A shared configuration package for ESLint, Prettier, and Stylelint",
   "keywords": [

@@ -1,5 +1,5 @@
 {
-  "name": "@yan/eslint-config",
+  "name": "@ovyvo/eslint-config",
   "version": "1.0.0",
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
