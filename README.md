@@ -9,11 +9,11 @@
 ## Install
 
 ```bash
-npm install @yan/eslint-config -D
+npm install @ovyvo/eslint-config -D
 // or
-yarn add @yan/eslint-config -D
+yarn add @ovyvo/eslint-config -D
 // or
-pnpm install @yan/eslint-config -D
+pnpm install @ovyvo/eslint-config -D
 ```
 
 ## Usage
@@ -23,7 +23,7 @@ pnpm install @yan/eslint-config -D
 module.exports = {
   extends: [
     // 引入您的配置包
-    "@yan/eslint-config",
+    "@ovyvo/eslint-config",
     // 其他扩展或自定义规则
     ...
   ],
@@ -36,11 +36,11 @@ module.exports = {
 ## Install
 
 ```bash
-npm install @yan/prettier-config -D
+npm install @ovyvo/prettier-config -D
 // or
-yarn add @yan/prettier-config -D
+yarn add @ovyvo/prettier-config -D
 // or
-pnpm install @yan/prettier-config -D
+pnpm install @ovyvo/prettier-config -D
 ```
 
 ## Usage
@@ -48,7 +48,7 @@ pnpm install @yan/prettier-config -D
 ```javascript
 // package.json
 {
-  "prettier": "@yan/prettier-config"
+  "prettier": "@ovyvo/prettier-config"
 }
 ```
 
@@ -57,23 +57,23 @@ pnpm install @yan/prettier-config -D
 ## Install
 
 ```bash
-npm install @yan/stylelint-config -D
+npm install @ovyvo/stylelint-config -D
 // or
-yarn add @yan/stylelint-config -D
+yarn add @ovyvo/stylelint-config -D
 // or
-pnpm install @yan/stylelint-config -D
+pnpm install @ovyvo/stylelint-config -D
 ```
 
 ## Usage
 
-> 注意：@yan/stylelint-config 中已引入"stylelint-config-standard"，"stylelint-order"，"stylelint-config-rational-order"常规配置，如您需要支持 less 或 scss 请安装相关 plugin 及 extends。
+> 注意：@ovyvo/stylelint-config 中已引入"stylelint-config-standard"，"stylelint-order"，"stylelint-config-rational-order"常规配置，如您需要支持 less 或 scss 请安装相关 plugin 及 extends。
 
 ```javascript
 // .stylelintrc.js
 module.exports = {
   extends: [
     //配置已引入,
-    "@yan/stylelint-config",
+    "@ovyvo/stylelint-config",
     // ...
   ],
   rules: {
