@@ -1,3 +1,5 @@
 packages:
-  - play # 调试库
-  - eslint # 文档库
+  - play
+  - eslint
+  - prettier
+  - stylelint

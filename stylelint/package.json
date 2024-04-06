@@ -1,0 +1,25 @@
+{
+  "name": "@yan/stylelint-config",
+  "version": "1.0.0",
+  "description": "A shared configuration package for StyleLint",
+  "main": "index.js",
+  "keywords": [
+    "stylelint",
+    "stylelint-config"
+  ],
+  "author": "vue12306@163.com",
+  "peerDependencies": {
+    "stylelint": "^16.3.1",
+    "stylelint-config-rational-order": "^0.1.2",
+    "stylelint-config-standard": "^36.0.0",
+    "stylelint-order": "^6.0.4"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OVYVO/yan-lint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/OVYVO/yan-lint-config/issues"
+  },
+  "license": "MIT"
+}

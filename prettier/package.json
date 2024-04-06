@@ -1,0 +1,22 @@
+{
+  "name": "@yan/prettier-config",
+  "version": "1.0.0",
+  "description": "A shared configuration package for Prettier",
+  "main": "index.js",
+  "keywords": [
+    "prettier",
+    "prettier-config"
+  ],
+  "author": "vue12306@163.com",
+  "peerDependencies": {
+    "prettier": "^3.2.5"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/OVYVO/yan-lint-config"
+  },
+  "bugs": {
+    "url": "https://github.com/OVYVO/yan-lint-config/issues"
+  },
+  "license": "MIT"
+}
