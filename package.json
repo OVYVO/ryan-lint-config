@@ -1,6 +1,6 @@
 {
   "name": "@yan/lint-config",
-  "version": "1.0.0-beat",
+  "version": "1.0.0",
   "description": "A shared configuration package for ESLint, Prettier, and Stylelint",
   "keywords": [
     "eslint",
@@ -8,8 +8,5 @@
     "stylelint"
   ],
   "author": "vue12306@163.com",
-  "license": "MIT",
-  "dependencies": {
-    "@yan/eslint-config": "workspace:^"
-  }
+  "license": "MIT"
 }
