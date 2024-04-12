@@ -3,11 +3,11 @@
 ## Install
 
 ```bash
-npm install @yan/prettier-config -D
+npm install @ovyvo/prettier-config -D
 // or
-yarn add @yan/prettier-config -D
+yarn add @ovyvo/prettier-config -D
 // or
-pnpm install @yan/prettier-config -D
+pnpm install @ovyvo/prettier-config -D
 ```
 
 ## Usage
@@ -15,6 +15,6 @@ pnpm install @yan/prettier-config -D
 ```javascript
 // package.json
 {
-  "prettier": "@yan/prettier-config"
+  "prettier": "@ovyvo/prettier-config"
 }
 ```

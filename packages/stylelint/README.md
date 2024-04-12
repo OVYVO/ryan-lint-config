@@ -3,11 +3,11 @@
 ## Install
 
 ```bash
-npm install @yan/stylelint-config -D
+npm install @ovyvo/stylelint-config -D
 // or
-yarn add @yan/stylelint-config -D
+yarn add @ovyvo/stylelint-config -D
 // or
-pnpm install @yan/stylelint-config -D
+pnpm install @ovyvo/stylelint-config -D
 ```
 
 ## Usage
@@ -19,7 +19,7 @@ pnpm install @yan/stylelint-config -D
 module.exports = {
   extends: [
     //配置已引入,
-    "@yan/stylelint-config",
+    "@ovyvo/stylelint-config",
     // ...
   ],
   rules: {
