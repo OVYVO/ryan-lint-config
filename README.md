@@ -52,7 +52,7 @@ pnpm install @ovyvo/prettier-config -D
 }
 ```
 
-## Prettier Config Of RyanYan
+## StyleLint Config Of RyanYan
 
 ## Install
 
