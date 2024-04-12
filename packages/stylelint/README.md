@@ -28,3 +28,20 @@ module.exports = {
   // 其他 Stylelint 配置项
 };
 ```
+
+> 注意：如您想要配合 vscode 实现更加优雅的样式代码格式化，请安装推荐插件，并在您的项目工作区中增加以下配置
+
+```javascript
+// .vscode/settings.json
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll.stylelint": "explicit"
+  },
+  "stylelint.validate": ["css", "scss", "less", "postcss"]
+}
+//.vscode/extensions.json
+{
+  "recommendations": ["stylelint.vscode-stylelint"]
+}
+
+```
