@@ -1,5 +1,9 @@
 {
   "workspaces": [
     "packages/**"
-  ]
+  ],
+  "scripts": {
+    "login": "pnpm login",
+    "publish": "pnpm publish -r packages/*"
+  }
 }
