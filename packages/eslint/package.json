@@ -3,6 +3,9 @@
   "version": "1.0.1",
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
+  "bin": {
+    "@ovyvo/eslint-config": "/bin/index.js"
+  },
   "keywords": [
     "eslint",
     "eslint-config"
@@ -19,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/OVYVO/yan-lint-config/issues"
   },
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "yargs": "17.1.1-candidate.0"
+  }
 }

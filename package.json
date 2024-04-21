@@ -5,5 +5,8 @@
   "scripts": {
     "login": "pnpm login",
     "publish": "pnpm publish -r packages/*"
+  },
+  "dependencies": {
+    "chalk": "^5.3.0"
   }
 }
