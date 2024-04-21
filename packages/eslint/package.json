@@ -24,6 +24,7 @@
   },
   "license": "MIT",
   "dependencies": {
+    "@ovyvo/eslint-config": "^1.0.1",
     "yargs": "17.1.1-candidate.0"
   }
 }
