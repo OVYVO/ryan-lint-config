@@ -1,24 +1,18 @@
+import process from "node:process";
 import yargs from "yargs";
 import { hideBin } from "yargs/helpers";
+import pkgJson from "../package.json";
 
 yargs(hideBin(process.argv))
-  .command(
-    "serve [port]",
-    "start the server",
-    (yargs) => {
-      return yargs.positional("port", {
-        describe: "port to bind on",
-        default: 5000,
-      });
-    },
-    (argv) => {
-      if (argv.verbose) console.info(`start server on :${argv.port}`);
-      serve(argv.port);
-    }
+  .scriptName("@ovyvo/eslint-config")
+  .command("*", "Run the initialization", (args) =>
+    args.option("yes", {
+      alias: "y",
+      description: "Skip prompts and use default values",
+      type: "boolean",
+    })
   )
-  .option("verbose", {
-    alias: "v",
-    type: "boolean",
-    description: "Run with verbose logging",
-  })
-  .parse();
+  .showHelpOnFail(false)
+  .alias("h", "help")
+  .version("version", pkgJson.version)
+  .alias("v", "version");
