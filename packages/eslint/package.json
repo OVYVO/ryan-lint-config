@@ -3,18 +3,12 @@
   "version": "1.0.1",
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
-  "bin": {
-    "@ovyvo/eslint-config": "/bin/index.js"
-  },
+  "bin": "./bin/index.js",
   "keywords": [
     "eslint",
     "eslint-config"
   ],
   "author": "vue12306@163.com",
-  "peerDependencies": {
-    "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.24.0"
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/OVYVO/yan-lint-config"
@@ -24,7 +18,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ovyvo/eslint-config": "^1.0.1",
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0",
     "yargs": "17.1.1-candidate.0"
   }
 }
