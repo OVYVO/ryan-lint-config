@@ -1,19 +1,12 @@
-// import process from "node:process";
-// import yargs from "yargs";
-// import { hideBin } from "yargs/helpers";
-// import pkgJson from "../package.json";
+#! /usr/bin/env node
 
-// yargs(hideBin(process.argv))
-//   .scriptName("@ovyvo/eslint-config")
-//   .command("*", "Run the initialization", (args) =>
-//     args.option("yes", {
-//       alias: "y",
-//       description: "Skip prompts and use default values",
-//       type: "boolean",
-//     })
-//   )
-//   .showHelpOnFail(false)
-//   .alias("h", "help")
-//   .version("version", pkgJson.version)
-//   .alias("v", "version");
-console.log(123);
+import program from "commander";
+import { helpOptions } from "@core/help";
+import { createCommands } from "@core/create";
+
+// 创建辅助指令
+helpOptions();
+// 添加其他指令
+createCommands();
+
+program.parse(process.argv);
