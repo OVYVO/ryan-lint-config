@@ -1,8 +1,9 @@
 #! /usr/bin/env node
+import { Command } from "commander";
+import { helpOptions } from "./core/help.js";
+import { createCommands } from "./core/create.js";
 
-import program from "commander";
-import { helpOptions } from "@core/help";
-import { createCommands } from "@core/create";
+const program = new Command();
 
 // 创建辅助指令
 helpOptions();

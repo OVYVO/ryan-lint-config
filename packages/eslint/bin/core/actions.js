@@ -1,3 +1,4 @@
+import { cPrimary } from "../utils/chalk.js";
 export const handlerCreateInit = () => {
-  console.log(1111);
+  cPrimary(1111);
 };
