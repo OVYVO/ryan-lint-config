@@ -8,6 +8,13 @@
     "eslint",
     "eslint-config"
   ],
+  "peerDependencies": {
+    "eslint": "^8.57.0",
+    "eslint-plugin-vue": "^9.24.0"
+  },
+  "dependencies": {
+    "yargs": "17.1.1-candidate.0"
+  },
   "author": "vue12306@163.com",
   "repository": {
     "type": "git",
@@ -16,10 +23,5 @@
   "bugs": {
     "url": "https://github.com/OVYVO/yan-lint-config/issues"
   },
-  "license": "MIT",
-  "dependencies": {
-    "eslint": "^8.57.0",
-    "eslint-plugin-vue": "^9.24.0",
-    "yargs": "17.1.1-candidate.0"
-  }
+  "license": "MIT"
 }
