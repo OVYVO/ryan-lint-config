@@ -6,8 +6,8 @@ import { createCommands } from "./core/create.js";
 const program = new Command();
 
 // 创建辅助指令
-helpOptions();
+helpOptions(program);
 // 添加其他指令
-createCommands();
+createCommands(program);
 
 program.parse(process.argv);
