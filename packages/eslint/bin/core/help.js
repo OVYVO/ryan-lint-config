@@ -1,4 +1,4 @@
-import { resolvePkg } from "../utils/pkg.js";
+import { resolvePkg } from "utils";
 export async function helpOptions(program) {
   const pkg = await resolvePkg(process.cwd());
   program.name(pkg.name);

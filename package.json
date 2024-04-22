@@ -1,5 +1,6 @@
 {
   "scripts": {
+    "preinstall": "npx only-allow pnpm",
     "login": "pnpm login",
     "publish": "pnpm publish -r packages/*",
     "clear": "rimraf pnpm-lock.yaml && find . -name 'node_modules' -exec rm -rf '{}' +"

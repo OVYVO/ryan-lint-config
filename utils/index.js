@@ -1,2 +1,2 @@
-export * from "./modules/chalk";
-export * from "./modules/pkg";
+export * from "./modules/chalk.js";
+export * from "./modules/pkg.js";
