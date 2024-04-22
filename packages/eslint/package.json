@@ -8,6 +8,9 @@
     "eslint",
     "eslint-config"
   ],
+  "scripts":{
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "peerDependencies": {
     "eslint": "^8.57.0",
     "eslint-plugin-vue": "^9.24.0"
