@@ -5,7 +5,7 @@ export const handlerInit = async () => {
   const { needInstallDependencies } = await inquirer.prompt({
     type: "confirm",
     name: "needInstallDependencies",
-    message: `Do you need to install dependencies for you`,
+    message: `Do you need to install base dependencies for you`,
   });
   const { needCreateignoreFile } = await inquirer.prompt({
     type: "confirm",
