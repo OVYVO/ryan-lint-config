@@ -1,9 +1,8 @@
-import { handlerCreateInit } from "./actions.js";
+import { handlerInit } from "./actions.js";
 
 export const createCommands = (program) => {
   program
     .command("init")
-    .description("Command Init")
-    .option("-c, --config", "Show config info")
-    .action(handlerCreateInit);
+    .description("Initialize eslint configuration.")
+    .action(handlerInit);
 };
