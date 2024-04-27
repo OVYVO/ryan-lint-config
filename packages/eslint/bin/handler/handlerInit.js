@@ -4,14 +4,14 @@ import * as t from "../template/index.js";
 export const initConfig = async ({ langType, needCreateignoreFile } = {}) => {
   try {
     u.loading.start({ text: "正在为您安装基础依赖..." });
-    await u.commandSpawn("pnpm", ["add", "@ovyvo/eslint-config"], {
+    await u.commandSpawn("pnpm", ["add", "@ovyvo/eslint-config", "-D"], {
       cwd: process.cwd(),
       stdio: "pipe",
     });
     u.loading.succeed("基础依赖安装完毕");
     if (langType == 2) {
       u.loading.start({ text: "正在为您安装附加依赖..." });
-      await u.commandSpawn("pnpm", ["add", "@typescript-eslint/parser"], {
+      await u.commandSpawn("pnpm", ["add", "@typescript-eslint/parser", "-D"], {
         cwd: process.cwd(),
         stdio: "pipe",
       });
