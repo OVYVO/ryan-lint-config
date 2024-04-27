@@ -1,10 +1,16 @@
 import fs from "fs";
 import path from "path";
-import { readPackage } from "read-pkg";
 
 export const resolvePkg = async (context) => {
-  if (fs.existsSync(path.join(context, "package.json"))) {
-    return await readPackage({ cwd: context });
+  const filePath = path.join(context, "package.json");
+  if (fs.existsSync(filePath)) {
+    try {
+      const packageJsonContent = await fs.promises.readFile(filePath, "utf-8");
+      return JSON.parse(packageJsonContent);
+    } catch (error) {
+      console.error(error);
+    }
+  } else {
+    return {};
   }
-  return {};
 };
