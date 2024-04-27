@@ -10,7 +10,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
+    "test": "npx @ovyvo/eslint-config init",
     "link:global": "pnpm link --global && pnpm link --global @ovyvo/eslint-config",
     "unlink:global": "pnpm unlink --global @ovyvo/eslint-config"
   },

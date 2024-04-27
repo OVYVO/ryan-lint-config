@@ -1,2 +1,2 @@
-export * from "./eslintconfig.js";
-export * from "./eslintignore.js";
+export * from "./createEslintconfig.js";
+export * from "./createEslintignore.js";
