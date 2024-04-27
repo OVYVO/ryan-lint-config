@@ -1,23 +1,21 @@
 import * as u from "utils";
 import * as t from "../template/index.js";
 
-console.log(t);
-
 export const initConfig = async ({ langType, needCreateignoreFile } = {}) => {
   try {
     u.loading.start({ text: "正在为您安装基础依赖..." });
-    // await u.commandSpawn("pnpm", ["add", "@ovyvo/eslint-config"], {
-    //   cwd: process.cwd(),
-    //   stdio: "pipe",
-    // });
-    u.loading.succeed("安装完毕");
+    await u.commandSpawn("pnpm", ["add", "@ovyvo/eslint-config"], {
+      cwd: process.cwd(),
+      stdio: "pipe",
+    });
+    u.loading.succeed("基础依赖安装完毕");
     if (langType == 2) {
       u.loading.start({ text: "正在为您安装附加依赖..." });
-      // await u.commandSpawn("pnpm", ["add", "@typescript-eslint/parser"], {
-      //   cwd: process.cwd(),
-      //   stdio: "pipe",
-      // });
-      u.loading.succeed("安装完毕");
+      await u.commandSpawn("pnpm", ["add", "@typescript-eslint/parser"], {
+        cwd: process.cwd(),
+        stdio: "pipe",
+      });
+      u.loading.succeed("附加依赖安装完毕");
     }
     u.loading.start({ text: "为您写入.eslint.cjs配置文件..." });
     const eslintFileContent = t.eslintConfig(langType);

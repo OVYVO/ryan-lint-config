@@ -10,12 +10,7 @@ class Loading {
     if (this.load) {
       this.load = null;
     }
-    this.load = ora(
-      (options = {
-        ...options,
-        spinner: "dots",
-      })
-    ).start();
+    this.load = ora((options = { ...options, spinner: "dots" })).start();
   }
   stop() {
     this.load && this.load.stop();
@@ -24,16 +19,16 @@ class Loading {
     this.load && this.load.clear();
   }
   warn(text) {
-    this.load && this.load.warn(cWarning(text));
+    this.load && this.load.warn(text);
   }
   info(text) {
-    this.load && this.load.info(cPrimary(text));
+    this.load && this.load.info(text);
   }
   succeed(text) {
-    this.load && this.load.succeed(cSuccess(text));
+    this.load && this.load.succeed(text);
   }
   fail(text) {
-    this.load && this.load.fail(cError(text));
+    this.load && this.load.fail(text);
   }
 }
 
