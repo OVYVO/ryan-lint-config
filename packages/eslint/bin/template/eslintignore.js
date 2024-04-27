@@ -1,4 +1,5 @@
-export const eslintIgnore = `
+export const eslintIgnore = () => {
+  `
 *.sh
 *.sh
 *.md
@@ -11,3 +12,4 @@ export const eslintIgnore = `
 node_modules
 dist
 `;
+};
