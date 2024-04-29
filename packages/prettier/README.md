@@ -1,16 +1,16 @@
 ## Prettier Config Of RyanYan
 
-## Install
+## 安装
 
 ```bash
 npm install @ovyvo/prettier-config -D
 // or
 yarn add @ovyvo/prettier-config -D
 // or
-pnpm install @ovyvo/prettier-config -D
+pnpm add @ovyvo/prettier-config -D
 ```
 
-## Usage
+## 使用
 
 ```javascript
 // package.json

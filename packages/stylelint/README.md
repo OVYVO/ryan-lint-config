@@ -1,16 +1,16 @@
 ## Prettier Config Of RyanYan
 
-## Install
+## 安装
 
 ```bash
 npm install @ovyvo/stylelint-config -D
 // or
 yarn add @ovyvo/stylelint-config -D
 // or
-pnpm install @ovyvo/stylelint-config -D
+pnpm add @ovyvo/stylelint-config -D
 ```
 
-## Usage
+## 使用
 
 > 注意：@yan/stylelint-config 中已引入"stylelint-config-standard"，"stylelint-order"，"stylelint-config-rational-order"常规配置，如您需要支持 less 或 scss 请安装相关 plugin 及 extends。
 
