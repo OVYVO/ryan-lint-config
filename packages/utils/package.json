@@ -1,7 +1,7 @@
 {
   "name": "@ovyvo/cli-utils",
   "version": "1.0.0",
-  "description": "yan-lint-config utils",
+  "description": "cli utils",
   "main": "index.js",
   "type": "module",
   "keywords": [
