@@ -19,13 +19,21 @@ export const initConfig = async ({ langType, needCreateignoreFile } = {}) => {
     }
     u.loading.start({ text: "👷为您写入.eslint.cjs配置文件..." });
     const eslintFileContent = t.eslintConfig(langType);
-    await u.writeFile(process.cwd(), ".eslint.cjs", eslintFileContent);
-    u.loading.succeed(u.wSuccess("🚀 .eslint.cjs配置文件写入完毕..."));
+    try {
+      await u.writeFile(process.cwd(), ".eslint.cjs", eslintFileContent);
+      u.loading.succeed(u.wSuccess("🚀 .eslint.cjs配置文件写入完毕..."));
+    } catch (err) {
+      u.loading.fail(u.wSuccess("🚨 .eslint.cjs文件写入错误..."));
+    }
     if (needCreateignoreFile) {
       u.loading.start({ text: "👷为您写入.eslintignore配置文件..." });
       const ignoreFileContent = t.eslintIgnore();
-      await u.writeFile(process.cwd(), ".eslintignore", ignoreFileContent);
-      u.loading.succeed(u.wSuccess("🚀 .eslintignore配置文件写入完毕..."));
+      try {
+        await u.writeFile(process.cwd(), ".eslintignore", ignoreFileContent);
+        u.loading.succeed(u.wSuccess("🚀 .eslintignore配置文件写入完毕..."));
+      } catch (err) {
+        u.loading.fail(u.wSuccess("🚨 .eslintignore文件写入错误..."));
+      }
     }
   } catch (error) {
     u.cError(`🚨抱歉, 初始化失败！报错信息: ${error}`);

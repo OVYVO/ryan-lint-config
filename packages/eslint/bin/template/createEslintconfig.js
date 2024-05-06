@@ -1,15 +1,19 @@
 export const eslintConfig = (langType = 1) => {
-  let cExtends = ["@ovyvo/eslint-config"];
-  let cParserOptions = {};
-  let plugins = [];
+  const config = {
+    extends: ["@ovyvo/eslint-config"],
+    parserOptions: {},
+    plugins: [],
+  };
   if (langType == 2) {
-    cExtends.push("plugin:@typescript-eslint/recommended");
-    cParserOptions.parser = "@typescript-eslint/parser";
-    plugins.push("@typescript-eslint");
+    config.extends = [
+      ...config.extends,
+      "plugin:@typescript-eslint/recommended",
+    ];
+    config.parserOptions = {
+      ...config.parserOptions,
+      ...{ parse: "@typescript-eslint/parser" },
+    };
+    config.plugins = [...config.plugins, "@typescript-eslint"];
   }
-  return `module.exports = {
-  extends: ${JSON.stringify(cExtends)},
-  parserOptions: ${JSON.stringify(cParserOptions)},
-  plugins: ${JSON.stringify(plugins)}
-};`;
+  return `module.exports = ${JSON.stringify(config, null, 2)};\n`;
 };

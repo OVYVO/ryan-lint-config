@@ -13,20 +13,20 @@ export const existsDir = async (path) => {
   }
 };
 
-export const makeDir = async (path) => {
+export const makeDir = async (path, showResult = false) => {
   try {
     await fs.mkdir(path);
-    cSuccess(`Successfully create directory: ${path}`);
+    showResult && cSuccess(`Successfully create directory: ${path}`);
   } catch (err) {
     cError(`Create directory failed: ${err}`);
     throw err;
   }
 };
 
-export const removeDir = async (path) => {
+export const removeDir = async (path, showResult = false) => {
   try {
     await fs.remove(path);
-    cSuccess(`Successfully remove directory: ${path}`);
+    showResult && cSuccess(`Successfully remove directory: ${path}`);
   } catch (err) {
     cError(`Remove directory failed: ${err}`);
     throw err;
