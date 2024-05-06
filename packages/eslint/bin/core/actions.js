@@ -11,10 +11,5 @@ export const handlerInit = async () => {
       { name: "TypeScript", value: 2 },
     ],
   });
-  const { needCreateignoreFile } = await inquirer.prompt({
-    type: "confirm",
-    name: "needCreateignoreFile",
-    message: `需要为您创建.gitignore文件吗？`,
-  });
-  initConfig({ langType, needCreateignoreFile });
+  initConfig({ langType });
 };
