@@ -1,4 +1,4 @@
-import { resolvePkg } from "utils";
+import { resolvePkg } from "@ovyvo/cli-utils";
 export async function helpOptions(program) {
   const pkg = await resolvePkg(process.cwd());
   program.name(pkg.name);

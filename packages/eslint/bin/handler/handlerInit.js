@@ -1,4 +1,4 @@
-import * as u from "utils";
+import * as u from "@ovyvo/cli-utils";
 import * as t from "../template/index.js";
 
 export const initConfig = async ({ langType, needCreateignoreFile } = {}) => {
