@@ -1,6 +1,7 @@
 import path from "path";
 import fs from "fs-extra";
-import { readFileSync } from "fs";
+// import { readFileSync } from "fs";
+const { readFileSync } = require("node:fs");
 import { cError, cSuccess } from "./chalk.js";
 
 export const existsDir = async (path) => {

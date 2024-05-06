@@ -10,6 +10,7 @@
     "eslint-config"
   ],
   "scripts": {
+    "build": "rollup -c",
     "test": "npx @ovyvo/eslint-config init",
     "link:global": "pnpm link --global && pnpm link --global @ovyvo/eslint-config",
     "unlink:global": "pnpm unlink --global @ovyvo/eslint-config"
@@ -31,5 +32,15 @@
     "@ovyvo/cli-utils": "workspace:^",
     "commander": "^12.0.0",
     "inquirer": "^9.2.19"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.17.2",
+    "rollup-plugin-polyfill-node": "^0.13.0"
   }
 }

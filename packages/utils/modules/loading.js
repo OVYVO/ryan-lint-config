@@ -1,5 +1,4 @@
 import ora from "ora";
-import { cPrimary, cError, cWarning, cSuccess } from "./chalk.js";
 
 class Loading {
   constructor() {

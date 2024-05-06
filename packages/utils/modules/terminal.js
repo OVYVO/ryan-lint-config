@@ -1,4 +1,5 @@
-import { spawn } from "child_process";
+// import { spawn } from "child_process";
+const { spawn } = require("node:child_process");
 
 export const commandSpawn = (...args) => {
   return new Promise((resolve, reject) => {
