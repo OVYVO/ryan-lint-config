@@ -4,5 +4,15 @@
     "login": "pnpm login",
     "publish": "pnpm publish -r packages/*",
     "clear": "rimraf pnpm-lock.yaml && find . -name 'node_modules' -exec rm -rf '{}' +"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.24.5",
+    "@babel/preset-env": "^7.24.5",
+    "@rollup/plugin-babel": "^6.0.4",
+    "@rollup/plugin-commonjs": "^25.0.7",
+    "@rollup/plugin-json": "^6.1.0",
+    "@rollup/plugin-node-resolve": "^15.2.3",
+    "rollup": "^4.17.2",
+    "rollup-plugin-polyfill-node": "^0.13.0"
   }
 }
