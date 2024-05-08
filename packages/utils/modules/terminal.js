@@ -1,4 +1,3 @@
-// import { spawn } from "child_process";
 const { spawn } = require("node:child_process");
 
 export const commandSpawn = (...args) => {

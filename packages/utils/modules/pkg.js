@@ -1,5 +1,5 @@
-import fs from "fs";
-import path from "path";
+const fs = require("node:fs");
+const path = require("node:path");
 
 export const resolvePkg = async (context) => {
   const filePath = path.join(context, "package.json");
