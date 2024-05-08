@@ -7,6 +7,9 @@
   "keywords": [
     "cli-utils"
   ],
+  "scripts": {
+    "build": "tsc && tsc-alias"
+  },
   "author": "vue12306@163.com",
   "repository": {
     "type": "git",
@@ -19,6 +22,10 @@
   "dependencies": {
     "chalk": "^5.3.0",
     "fs-extra": "^11.2.0",
-    "ora": "^8.0.1"
+    "ora": "^8.0.1",
+    "typescript": "^5.4.5"
+  },
+  "devDependencies": {
+    "tsc-alias": "^1.8.8"
   }
 }

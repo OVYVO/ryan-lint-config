@@ -1,0 +1,18 @@
+{
+  "include": ["lib/*"],
+  "exclude": ["node_modules"],
+  "compilerOptions": {
+    "resolveJsonModule": false,
+    "esModuleInterop": true,
+    "strictNullChecks": true,
+    "strictPropertyInitialization": true,
+    "noImplicitAny": false,
+    "outDir": "./bin",
+    "target": "es5",
+    "allowJs": true,
+    "baseUrl": ".",
+    "paths": {
+      "@/*": ["modules/*"]
+    }
+  }
+}
