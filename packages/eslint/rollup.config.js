@@ -5,9 +5,9 @@ import nodePolyfills from "rollup-plugin-polyfill-node";
 import json from "@rollup/plugin-json";
 
 export default {
-  input: "bin/index.js",
+  input: "lib/index.js",
   output: {
-    file: "lib/index.js",
+    file: "bin/index.js",
     format: "umd",
     globals: {},
   },
