@@ -12,7 +12,8 @@
     "allowJs": true,
     "baseUrl": ".",
     "paths": {
-      "@/*": ["modules/*"]
+      "@/*": ["modules/*"],
+      "tslib": ["node_modules/tslib/tslib.d.ts"]
     }
   }
 }

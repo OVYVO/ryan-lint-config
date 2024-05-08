@@ -8,7 +8,7 @@
     "cli-utils"
   ],
   "scripts": {
-    "build": "tsc && tsc-alias"
+    "build": "rollup -c"
   },
   "author": "vue12306@163.com",
   "repository": {
@@ -27,6 +27,7 @@
   },
   "devDependencies": {
     "@types/node": "^20.12.10",
-    "tsc-alias": "^1.8.8"
+    "tsc-alias": "^1.8.8",
+    "tslib": "^2.6.2"
   }
 }
