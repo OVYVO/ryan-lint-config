@@ -1,7 +1,7 @@
 const fs = require("node:fs");
 const path = require("node:path");
 
-export const resolvePkg = async (context) => {
+export const resolvePkg = async (context: string) => {
   const filePath = path.join(context, "package.json");
   if (fs.existsSync(filePath)) {
     try {

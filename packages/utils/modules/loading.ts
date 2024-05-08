@@ -1,15 +1,18 @@
-import ora from "ora";
+import ora, { Options, Ora } from "ora";
 
 class Loading {
+  load: null | Ora;
   constructor() {
     this.load = null;
   }
 
-  start(options) {
+  start(options: Options | string) {
     if (this.load) {
       this.load = null;
     }
-    this.load = ora((options = { ...options, spinner: "dots" })).start();
+    this.load = ora(
+      (options = { ...(options as Options), spinner: "dots" })
+    ).start();
   }
   stop() {
     this.load && this.load.stop();
@@ -17,16 +20,16 @@ class Loading {
   clear() {
     this.load && this.load.clear();
   }
-  warn(text) {
+  warn(text: string) {
     this.load && this.load.warn(text);
   }
-  info(text) {
+  info(text: string) {
     this.load && this.load.info(text);
   }
-  succeed(text) {
+  succeed(text: string) {
     this.load && this.load.succeed(text);
   }
-  fail(text) {
+  fail(text: string) {
     this.load && this.load.fail(text);
   }
 }

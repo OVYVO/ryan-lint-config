@@ -1,5 +1,5 @@
 {
-  "include": ["lib/*"],
+  "include": ["modules/*"],
   "exclude": ["node_modules"],
   "compilerOptions": {
     "resolveJsonModule": false,
