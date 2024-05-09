@@ -7,6 +7,9 @@
   "keywords": [
     "cli-utils"
   ],
+  "files": [
+    "index.js"
+  ],
   "scripts": {
     "build": "rollup -c"
   },
