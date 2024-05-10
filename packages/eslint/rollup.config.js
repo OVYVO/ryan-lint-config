@@ -20,8 +20,10 @@ export default {
     commonjs({
       exclude: "node_modules/**",
     }),
-    nodePolyfills(),
     babel({
+      exclude: "node_modules/**",
+    }),
+    nodePolyfills({
       exclude: "node_modules/**",
     }),
   ],
