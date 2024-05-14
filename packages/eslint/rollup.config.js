@@ -17,10 +17,10 @@ export default {
       preferBuiltins: true,
       exclude: "node_modules/**",
     }),
-    commonjs({
+    babel({
       exclude: "node_modules/**",
     }),
-    babel({
+    commonjs({
       exclude: "node_modules/**",
     }),
     nodePolyfills({
