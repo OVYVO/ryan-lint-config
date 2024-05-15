@@ -9,7 +9,10 @@ export default {
   output: {
     file: "bin/index.js",
     format: "umd",
-    globals: {},
+    globals: {
+      commander: "commander",
+      inquirer: "inquirer",
+    },
   },
   plugins: [
     json(),
@@ -23,9 +26,7 @@ export default {
     commonjs({
       exclude: "node_modules/**",
     }),
-    nodePolyfills({
-      exclude: "node_modules/**",
-    }),
+    nodePolyfills(),
   ],
   external: ["commander", "inquirer"],
 };
