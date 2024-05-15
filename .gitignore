@@ -2,7 +2,7 @@ node_modules
 bin
 play
 
-packages/utils/index.js
+packages/utils/lib
 
 # File
 pnpm-lock.yaml

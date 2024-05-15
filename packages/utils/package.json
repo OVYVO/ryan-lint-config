@@ -8,7 +8,7 @@
     "cli-utils"
   ],
   "files": [
-    "index.js"
+    "lib"
   ],
   "scripts": {
     "build": "rollup -c"

@@ -1,5 +1,5 @@
 import typescript from "@rollup/plugin-typescript";
-import terser from "@rollup/plugin-terser";
+// import terser from "@rollup/plugin-terser";
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 
@@ -7,13 +7,8 @@ export default {
   input: "modules/index.ts",
   output: {
     name: "cli-utils",
-    file: "index.js",
-    format: "umd",
-    globals: {
-      chalk: "chalk",
-      ora: "ora",
-      "fs-extra": "fs$1",
-    },
+    file: "lib/index.cjs",
+    format: "cjs",
   },
   plugins: [
     resolve(),
@@ -22,7 +17,7 @@ export default {
       compilerOptions: { lib: ["es5", "es6", "dom"], target: "es5" },
       exclude: "node_modules/**",
     }),
-    terser(),
+    // terser(),
   ],
   external: ["chalk", "ora", "fs-extra"],
 };
