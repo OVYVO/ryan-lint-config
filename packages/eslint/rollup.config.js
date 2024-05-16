@@ -7,12 +7,8 @@ import json from "@rollup/plugin-json";
 export default {
   input: "lib/index.js",
   output: {
-    file: "bin/index.js",
-    format: "umd",
-    globals: {
-      commander: "commander",
-      inquirer: "inquirer",
-    },
+    file: "bin/index.cjs",
+    format: "cjs",
   },
   plugins: [
     json(),
@@ -28,5 +24,4 @@ export default {
     }),
     nodePolyfills(),
   ],
-  external: ["commander", "inquirer"],
 };

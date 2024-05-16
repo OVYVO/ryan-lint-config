@@ -4,7 +4,7 @@
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
   "type": "module",
-  "bin": "/bin/index.js",
+  "bin": "/bin/index.cjs",
   "files": [
     "bin"
   ],
