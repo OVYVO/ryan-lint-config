@@ -1,7 +1,7 @@
-const { readFileSync } = require("node:fs");
-const path = require("node:path");
-import fs from "fs-extra";
+import { readFileSync } from "node:fs";
 import { cError, cSuccess } from "./chalk.js";
+import path from "node:path";
+import fs from "fs-extra";
 
 export const existsDir = async (path: string) => {
   try {

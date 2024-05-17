@@ -5,9 +5,9 @@ import * as terminal from "./terminal";
 import * as file from "./file";
 
 export default {
-  chalk,
-  pkg,
-  loading,
-  terminal,
-  file,
+  ...chalk,
+  ...pkg,
+  ...loading,
+  ...terminal,
+  ...file,
 };

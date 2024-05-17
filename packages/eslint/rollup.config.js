@@ -7,21 +7,20 @@ import json from "@rollup/plugin-json";
 export default {
   input: "lib/index.js",
   output: {
-    file: "bin/index.cjs",
-    format: "cjs",
+    file: "bin/index.js",
+    format: "umd",
+    name: "bin",
   },
   plugins: [
     json(),
+    nodePolyfills(),
     resolve({
       preferBuiltins: true,
       exclude: "node_modules/**",
     }),
-    babel({
-      exclude: "node_modules/**",
-    }),
+    babel(),
     commonjs({
       exclude: "node_modules/**",
     }),
-    nodePolyfills(),
   ],
 };

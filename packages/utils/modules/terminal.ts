@@ -1,4 +1,4 @@
-const { spawn } = require("node:child_process");
+import { spawn } from "child_process";
 import type { ChildProcess } from "child_process";
 
 export const commandSpawn = (...args: Parameters<typeof spawn>) => {

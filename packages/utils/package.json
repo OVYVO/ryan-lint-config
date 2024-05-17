@@ -1,8 +1,8 @@
 {
   "name": "@ovyvo/cli-utils",
   "version": "1.0.0",
-  "description": "cli utils",
-  "main": "lib/index.cjs",
+  "description": "cli-utils",
+  "main": "lib/index.js",
   "type": "module",
   "keywords": [
     "cli-utils"
