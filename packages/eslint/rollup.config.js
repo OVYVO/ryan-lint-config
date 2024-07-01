@@ -7,7 +7,7 @@ import json from "@rollup/plugin-json";
 export default {
   input: "lib/index.js",
   output: {
-    file: "bin/index.js",
+    file: "bin/index.cjs",
     format: "cjs",
   },
   plugins: [

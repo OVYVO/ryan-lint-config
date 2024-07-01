@@ -1,8 +1,9 @@
-// import * as u from "@ovyvo/cli-utils";
-// import * as t from "../template/index.js";
+import * as u from "@ovyvo/cli-utils";
+import * as t from "../template/index.js";
 
 export const initConfig = async ({ langType } = {}) => {
-  console.log(111111);
+  console.log(u);
+  console.log(t);
   // try {
   //   // 安装基础依赖
   //   u.loading.start({ text: "👷正在为您安装基础依赖..." });

@@ -3,7 +3,8 @@
   "version": "1.0.1",
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
-  "bin": "/bin/index.js",
+  "bin": "/bin/index.cjs",
+  "type": "module",
   "files": [
     "bin"
   ],
