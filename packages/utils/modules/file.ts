@@ -1,11 +1,11 @@
 import { readFileSync } from "node:fs";
 import { cError, cSuccess } from "./chalk.js";
 import path from "node:path";
-import fs from "fs-extra";
+import fse from "fs-extra";
 
 export const existsDir = async (path: string) => {
   try {
-    const exists = await fs.pathExists(path);
+    const exists = await fse.pathExists(path);
     return exists;
   } catch (err) {
     cError(`Check directory existence failed: ${err}`);
@@ -15,7 +15,7 @@ export const existsDir = async (path: string) => {
 
 export const makeDir = async (path: string, showResult: boolean = false) => {
   try {
-    await fs.mkdir(path);
+    await fse.mkdir(path);
     showResult && cSuccess(`Successfully create directory: ${path}`);
   } catch (err) {
     cError(`Create directory failed: ${err}`);
@@ -25,7 +25,7 @@ export const makeDir = async (path: string, showResult: boolean = false) => {
 
 export const removeDir = async (path: string, showResult: boolean = false) => {
   try {
-    await fs.remove(path);
+    await fse.remove(path);
     showResult && cSuccess(`Successfully remove directory: ${path}`);
   } catch (err) {
     cError(`Remove directory failed: ${err}`);
@@ -52,8 +52,8 @@ export const writeFile = async (
     const filePath = path.join(dir, flieName);
     const isExistsDir = await existsDir(filePath);
     if (isExistsDir) await removeDir(filePath);
-    fs.ensureDirSync(path.dirname(filePath));
-    fs.writeFileSync(filePath, fileContent);
+    fse.ensureDirSync(path.dirname(filePath));
+    fse.writeFileSync(filePath, fileContent);
   } catch (err) {
     cError(`Write File failed: ${err}`);
     throw err;
