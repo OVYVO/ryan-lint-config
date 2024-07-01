@@ -8,8 +8,7 @@ export default {
   input: "lib/index.js",
   output: {
     file: "bin/index.js",
-    format: "umd",
-    name: "bin",
+    format: "cjs",
   },
   plugins: [
     json(),
@@ -17,6 +16,7 @@ export default {
     resolve({
       preferBuiltins: true,
       exclude: "node_modules/**",
+      exportConditions: ["node"],
     }),
     babel(),
     commonjs({
