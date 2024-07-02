@@ -10,6 +10,13 @@ yarn add @ovyvo/cli-utils
 pnpm add @ovyvo/cli-utils
 ```
 
+## 使用
+
+```bash
+const u from "@ovyvo/cli-utils";
+u.cPrimary('hello')
+```
+
 ## 工具列表
 
 - chalk模块：控制台打印带颜色的字符串
