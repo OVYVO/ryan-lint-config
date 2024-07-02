@@ -1,6 +1,5 @@
 import inquirer from "inquirer";
 import { initConfig } from "../handler/handlerInit.js";
-
 export const handlerInit = async () => {
   const { langType } = await inquirer.prompt({
     type: "list",
