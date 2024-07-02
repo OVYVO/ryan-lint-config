@@ -32,5 +32,9 @@
     "@types/node": "^20.12.10",
     "tsc-alias": "^1.8.8",
     "tslib": "^2.6.2"
+  },
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
   }
 }
