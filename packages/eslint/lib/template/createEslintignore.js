@@ -1,7 +1,6 @@
 export const eslintIgnore = () => {
   return `
   *.sh
-  *.sh
   *.md
   *.woff
   *.ttf
