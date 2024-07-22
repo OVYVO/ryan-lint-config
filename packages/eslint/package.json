@@ -1,6 +1,6 @@
 {
   "name": "@ovyvo/eslint-config",
-  "version": "1.1.0",
+  "version": "2.1.0",
   "description": "A shared configuration package for ESLint",
   "main": "index.js",
   "bin": "/bin/index.cjs",
@@ -22,10 +22,9 @@
     "node": "^18.18.0 || >=20.0.0"
   },
   "peerDependencies": {
+    "@eslint/js": "^9.7.0",
     "eslint": ">=9",
-    "eslint-plugin-vue": "^9.24.0",
-    "globals": "^15.8.0",
-    "@eslint/js": "^9.7.0"
+    "eslint-plugin-vue": ">=9.24.0"
   },
   "author": "vue12306@163.com",
   "repository": {
@@ -37,8 +36,9 @@
   },
   "license": "MIT",
   "dependencies": {
-    "@ovyvo/cli-utils": "workspace:^",
-    "commander": "^12.0.0",
-    "inquirer": "^9.2.19"
+    "globals": "15.8.0"
+  },
+  "devDependencies": {
+    "eslint-plugin-vue": "9.25.0"
   }
 }
