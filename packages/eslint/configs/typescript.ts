@@ -1,1 +1,1 @@
-export const createTsConfig = () => {};
+export const createTsConfig = () => [];
