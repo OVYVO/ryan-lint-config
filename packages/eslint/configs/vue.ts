@@ -1,9 +1,14 @@
 import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 
-export const createVueConfig = () => {
+export const createVueConfig = (vueVersion: Number) => {
+  //区分vue2与vue3分别加载不同的规则
+  const versionConfig =
+    vueVersion == 3
+      ? pluginVue.configs["flat/essential"]
+      : pluginVue.configs["flat/vue2-essential"];
+
   const config: any[] = [
-    { files: ["**/*.{js,mjs,cjs,ts,vue}"] },
     {
       languageOptions: {
         ecmaVersion: "latest",
@@ -16,7 +21,7 @@ export const createVueConfig = () => {
         },
       },
     },
-    ...pluginVue.configs["flat/essential"],
+    ...versionConfig,
     {
       rules: {
         "vue/html-self-closing": "off",

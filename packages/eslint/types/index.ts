@@ -1,9 +1,11 @@
+// { files: ["**/*.{js,mjs,cjs,ts,vue}"] },
+
 export interface BaseOptions {
   ignore: string[];
-  file: string[];
+  files: string[];
 }
 
 export type Options = Partial<BaseOptions> & {
-  version: "vue2" | "vue3";
-  type: "javascript" | "typescript";
+  vueVersion: 2 | 3;
+  scriptType: "javascript" | "typescript";
 };
