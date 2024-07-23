@@ -1,8 +1,9 @@
 import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 
-export const createVueConfig = (version: string) => {
+export const createVueConfig = () => {
   const config: any[] = [
+    { files: ["**/*.{js,mjs,cjs,ts,vue}"] },
     {
       languageOptions: {
         ecmaVersion: "latest",

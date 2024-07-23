@@ -1,5 +1,6 @@
 export interface BaseOptions {
   ignore: string[];
+  file: string[];
 }
 
 export type Options = Partial<BaseOptions> & {

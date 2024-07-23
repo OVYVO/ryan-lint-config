@@ -36,7 +36,8 @@
   },
   "license": "MIT",
   "dependencies": {
-    "globals": "15.8.0"
+    "globals": "15.8.0",
+    "typescript-eslint": "^7.17.0"
   },
   "devDependencies": {
     "eslint-plugin-vue": "9.25.0"
