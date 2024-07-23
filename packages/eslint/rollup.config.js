@@ -1,24 +1,20 @@
-import resolve from "@rollup/plugin-node-resolve";
-import babel from "@rollup/plugin-babel";
-import commonjs from "@rollup/plugin-commonjs";
 import json from "@rollup/plugin-json";
+import resolve from "@rollup/plugin-node-resolve";
+import commonjs from "@rollup/plugin-commonjs";
+import typescript from "@rollup/plugin-typescript";
+// import terser from "@rollup/plugin-terser";
 
 export default {
-  input: "lib/index.js",
+  input: "index.ts",
   output: {
-    file: "bin/index.cjs",
-    format: "cjs",
+    file: "lib/index.js",
+    format: "es",
   },
   plugins: [
     json(),
-    resolve({
-      preferBuiltins: true,
-      exclude: "node_modules/**",
-      exportConditions: ["node"],
-    }),
-    babel(),
-    commonjs({
-      exclude: "node_modules/**",
-    }),
+    resolve({ exclude: "node_modules/**", exportConditions: ["node"] }),
+    commonjs({ exclude: "node_modules/**" }),
+    typescript({ exclude: "node_modules/**" }),
+    // terser(),
   ],
 };
