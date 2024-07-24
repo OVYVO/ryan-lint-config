@@ -1,14 +1,15 @@
 import pluginVue from "eslint-plugin-vue";
 import globals from "globals";
 
-export const createVueConfig = (vueVersion: Number) => {
+export const createVueConfig = (config: any) => {
+  const { vueVersion = 3 } = config;
   //区分vue2与vue3分别加载不同的规则
   const versionConfig =
     vueVersion == 3
       ? pluginVue.configs["flat/essential"]
       : pluginVue.configs["flat/vue2-essential"];
 
-  const config: any[] = [
+  return [
     {
       languageOptions: {
         ecmaVersion: "latest",

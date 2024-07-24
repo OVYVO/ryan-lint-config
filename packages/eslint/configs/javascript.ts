@@ -1,8 +1,7 @@
 import globals from "globals";
 import pluginJs from "@eslint/js";
-
 export const createJsConfig = () => {
-  const config = [
+  return [
     {
       languageOptions: {
         globals: {
@@ -13,9 +12,7 @@ export const createJsConfig = () => {
           window: "readonly",
         },
       },
-      rules: { ...pluginJs.configs.recommended.rules },
     },
+    pluginJs.configs.recommended,
   ];
-
-  return config;
 };

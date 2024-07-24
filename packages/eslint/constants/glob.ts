@@ -22,4 +22,5 @@ export const GLOB_IGNORE = [
   "**/components.d.ts",
 ];
 
-export const GLOB_FILES = ["**/*.{js,mjs,cjs,ts,vue}"];
+export const GLOB_FILES_VUE = ["**/*.{js,mjs,cjs,ts,vue}"];
+export const GLOB_FILES_TS = ["**/*.{js,mjs,cjs,ts}"];

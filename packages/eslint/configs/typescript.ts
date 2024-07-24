@@ -3,14 +3,11 @@ import tseslint from "typescript-eslint";
 import pluginJs from "@eslint/js";
 
 export const createTsConfig = () => {
-  const config = [
-    { languageOptions: { globals: { ...globals.browser, ...globals.node } } },
-    pluginJs.configs.recommended,
+  return [
     {
-      files: ["**/*.vue"],
-      languageOptions: { parserOptions: { parser: tseslint.parser } },
+      languageOptions: { globals: { ...globals.browser, ...globals.node } },
     },
+    pluginJs.configs.recommended,
+    ...tseslint.configs.recommended,
   ];
-
-  return config;
 };
