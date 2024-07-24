@@ -2,11 +2,10 @@
   "name": "@ovyvo/eslint-config",
   "version": "2.1.0",
   "description": "A shared configuration package for ESLint",
-  "main": "index.js",
-  "bin": "/bin/index.cjs",
+  "main": "/lib/index.js",
   "type": "module",
   "files": [
-    "bin"
+    "lib"
   ],
   "keywords": [
     "eslint",
