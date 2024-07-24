@@ -31,8 +31,12 @@ export const createVueConfig = (config: any) => {
         globals: {
           ...globals.browser,
           ...globals.node,
+          defineProps: "readonly",
+          defineEmits: "readonly",
           defineExpose: "readonly",
           defineOptions: "readonly",
+          defineModel: "readonly",
+          withDefaults: "readonly",
         },
       },
     },

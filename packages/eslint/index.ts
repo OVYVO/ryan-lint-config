@@ -12,7 +12,6 @@ export const defineConfig = (config: Partial<Options>) => {
   } = config;
 
   let customConfig: any[] = [];
-
   switch (frameType) {
     case "pure": {
       customConfig =

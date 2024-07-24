@@ -6,10 +6,16 @@ import typescript from "@rollup/plugin-typescript";
 
 export default {
   input: "index.ts",
-  output: {
-    file: "lib/index.js",
-    format: "esm",
-  },
+  output: [
+    {
+      file: "lib/index.js",
+      format: "es",
+    },
+    {
+      file: "lib/index.cjs",
+      format: "cjs",
+    },
+  ],
   external: ["eslint-plugin-vue", "globals", "typescript-eslint", "@eslint/js"],
   plugins: [
     json(),
