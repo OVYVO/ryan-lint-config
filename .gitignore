@@ -1,8 +1,8 @@
 node_modules
-bin
 play
 
-packages/utils/lib
+**/*/bin
+**/*/lib
 
 # File
 pnpm-lock.yaml

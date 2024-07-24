@@ -13,10 +13,7 @@
     "eslint-config"
   ],
   "scripts": {
-    "build": "rollup -c",
-    "test": "npx @ovyvo/eslint-config init",
-    "link:global": "pnpm link --global && pnpm link --global @ovyvo/eslint-config",
-    "unlink:global": "pnpm unlink --global @ovyvo/eslint-config"
+    "build": "rollup -c"
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
@@ -40,6 +37,7 @@
     "typescript-eslint": "^7.17.0"
   },
   "devDependencies": {
-    "eslint-plugin-vue": "9.25.0"
+    "eslint-plugin-vue": "9.25.0",
+    "tslib": "^2.6.2"
   }
 }
