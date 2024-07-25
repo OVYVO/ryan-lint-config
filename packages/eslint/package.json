@@ -12,7 +12,9 @@
     "eslint-config"
   ],
   "scripts": {
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "link:global": "pnpm link --global && pnpm link --global @ovyvo/eslint-config",
+    "unlink:global": "pnpm unlink --global @ovyvo/eslint-config"
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"
