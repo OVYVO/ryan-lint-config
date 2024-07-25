@@ -2,6 +2,7 @@ import pluginVue from "eslint-plugin-vue";
 import pluginJs from "@eslint/js";
 import tseslint from "typescript-eslint";
 import globals from "globals";
+import { GLOB_FILES_VUE } from "../constants/glob";
 
 export const createVueConfig = (config: any) => {
   const { frameVersion, scriptType, overrides } = config;
@@ -24,6 +25,7 @@ export const createVueConfig = (config: any) => {
       : [];
 
   return [
+    { files: GLOB_FILES_VUE },
     {
       languageOptions: {
         ecmaVersion: "latest",

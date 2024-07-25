@@ -1,6 +1,6 @@
 {
   "name": "@ovyvo/eslint-config",
-  "version": "2.1.0",
+  "version": "2.0.0",
   "description": "A shared configuration package for ESLint",
   "main": "/lib/index.js",
   "type": "module",
@@ -13,8 +13,7 @@
   ],
   "scripts": {
     "build": "rollup -c",
-    "link:global": "pnpm link --global && pnpm link --global @ovyvo/eslint-config",
-    "unlink:global": "pnpm unlink --global @ovyvo/eslint-config"
+    "link:global": "pnpm link --global"
   },
   "engines": {
     "node": "^18.18.0 || >=20.0.0"

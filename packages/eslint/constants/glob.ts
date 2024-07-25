@@ -24,3 +24,4 @@ export const GLOB_IGNORE = [
 
 export const GLOB_FILES_VUE = ["**/*.{js,mjs,cjs,ts,vue}"];
 export const GLOB_FILES_TS = ["**/*.{js,mjs,cjs,ts}"];
+export const GLOB_FILES_JS = ["**/*.{js,mjs,cjs}"];
