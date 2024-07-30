@@ -19,6 +19,7 @@ export const createVueConfig = (config: any) => {
           ...tseslint.configs.recommended,
           {
             files: ["**/*.vue"],
+            parser: "vue-eslint-parser",
             languageOptions: { parserOptions: { parser: tseslint.parser } },
           },
         ]
